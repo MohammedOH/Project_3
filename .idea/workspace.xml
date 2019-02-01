@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3512fad8-9164-4661-ac61-b67473a0cdbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyProgram/Cipher_Helper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project_3/JUnitTests/UnitTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project_3/JUnitTests/UnitTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project_3/MyProgram/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project_3/MyProgram/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JUnitTests/UnitTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JUnitTests/UnitTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyProgram/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyProgram/Main.java" afterDir="false" />
     </list>
@@ -19,8 +21,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MyProgram/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+            <state relative-caret-position="197">
+              <caret line="72" column="81" selection-start-line="72" selection-start-column="81" selection-end-line="72" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MyProgram/Cipher_Helper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
@@ -28,12 +39,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JUnitTests/UnitTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+            <state relative-caret-position="969">
+              <caret line="61" column="50" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#180#181#0" expanded="true" />
                 <element signature="e#218#219#0" expanded="true" />
+                <element signature="e#440#441#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,8 +68,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/JUnit_Tests/UnitTests.java" />
-        <option value="$PROJECT_DIR$/src/MyProgram/Main.java" />
         <option value="$PROJECT_DIR$/src/JUnitTests/UnitTests.java" />
+        <option value="$PROJECT_DIR$/src/MyProgram/Ciphering_Helper.java" />
+        <option value="$PROJECT_DIR$/src/MyProgram/Main.java" />
+        <option value="$PROJECT_DIR$/src/MyProgram/Cipher_Helper.java" />
       </list>
     </option>
   </component>
@@ -96,7 +110,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549018562613" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549030828623" />
     <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -116,7 +130,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UnitTests.test">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyProgram.Main" />
       <module name="Project_3" />
@@ -148,8 +162,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UnitTests.test" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UnitTests.test" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +178,7 @@
       <option name="presentableId" value="Default" />
       <updated>1548953278452</updated>
       <workItem from="1548953288615" duration="1479000" />
-      <workItem from="1549010991316" duration="3087000" />
+      <workItem from="1549010991316" duration="9022000" />
     </task>
     <servers />
   </component>
@@ -174,7 +188,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4566000" />
+    <option name="totallyTimeSpent" value="10501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -217,20 +231,28 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/JUnitTests/UnitTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+        <state relative-caret-position="969">
+          <caret line="61" column="50" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#180#181#0" expanded="true" />
             <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyProgram/Cipher_Helper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyProgram/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        <state relative-caret-position="197">
+          <caret line="72" column="81" selection-start-line="72" selection-start-column="81" selection-end-line="72" selection-end-column="81" />
         </state>
       </provider>
     </entry>
