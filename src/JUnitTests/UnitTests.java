@@ -47,7 +47,7 @@ public class UnitTests {
     /* Testing deciphering */
     @Test
     public void testDecipheringAtbash() {
-        String testDecipheringAtbash = ciphering.decipheringAtbash("QZEZ KILTIZNNRMT");
+        String testDecipheringAtbash = ciphering.cipheringAtbash("QZEZ KILTIZNNRMT");
         Assert.assertEquals(testDecipheringAtbash, s);
     }
 

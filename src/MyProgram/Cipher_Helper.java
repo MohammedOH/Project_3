@@ -35,7 +35,7 @@ public class Cipher_Helper {
     public static void getDecipheringAtbash() {
         System.out.print("Enter the text to be deciphered: ");
         String input = getInput();
-        String result = cipheringHex(input);
+        String result = cipheringAtbash(input);
         String output = (input + " has been deciphered Using ATBASH to " + result + "\n");
         Main.printAndRecord(output);
         Main.getMainMenu();
@@ -61,16 +61,22 @@ public class Cipher_Helper {
     }
 
     /* Method to get a strin from user*/
-    private static String getInput(){
+    private static String getInput() {
         Scanner input = new Scanner(System.in);
-        return (input.nextLine());
+        return (input.nextLine().toUpperCase());
     }
 
     /* Ciphering methods */
     public static String cipheringAtbash(String input) {
-        String result = null;
-
-        return result;
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < input.length(); i++) {
+            if (!Character.isLetter(input.charAt(i))) {
+                result.append(input.charAt(i));
+                continue;
+            }
+            result.append((char) (26 - (input.charAt(i) - 'A' + 1) + 'A'));
+        }
+        return result.toString();
     }
 
     public static String cipheringHex(String input) {
@@ -86,12 +92,6 @@ public class Cipher_Helper {
     }
 
     /* Deciphering methods */
-    public static String decipheringAtbash(String input) {
-        String result = null;
-
-        return result;
-    }
-
     public static String decipheringHex(String input) {
         String result = null;
 
