@@ -35,7 +35,7 @@ public class UnitTests {
     @Test
     public void testCipheringHex() {
         String testCipheringHex = ciphering.cipheringHex(s);
-        Assert.assertEquals(testCipheringHex, "4A 41 56 41 20 50 52 4F 47 52 41 4D 4D 49 4E 47");
+        Assert.assertEquals(testCipheringHex, "4A 41 56 41 20 50 52 4F 47 52 41 4D 4D 49 4E 47 ");
     }
 
     @Test
@@ -53,7 +53,7 @@ public class UnitTests {
 
     @Test
     public void testDecipheringHex() {
-        String testDecipheringHex = ciphering.decipheringHex("4A 41 56 41 20 50 52 4F 47 52 41 4D 4D 49 4E 47");
+        String testDecipheringHex = ciphering.decipheringHex("4A 41 56 41 20 50 52 4F 47 52 41 4D 4D 49 4E 47 ");
         Assert.assertEquals(testDecipheringHex, s);
     }
 

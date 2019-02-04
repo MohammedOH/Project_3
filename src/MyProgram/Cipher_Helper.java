@@ -44,7 +44,7 @@ public class Cipher_Helper {
     public static void getDecipheringHex() {
         System.out.print("Enter the text to be deciphered: ");
         String input = getInput();
-        String result = cipheringHex(input);
+        String result = decipheringHex(input);
         String output = (input + " has been deciphered Using HEXADECIMAL to " + result + "\n");
         Main.printAndRecord(output);
         Main.getMainMenu();
@@ -54,7 +54,7 @@ public class Cipher_Helper {
     public static void getDecipheringVigenere() {
         System.out.print("Enter the text to be deciphered: ");
         String input = getInput();
-        String result = cipheringHex(input);
+        String result = decipheringHex(input);
         String output = (input + " has been deciphered Using VIGENERE to " + result + "\n");
         Main.printAndRecord(output);
         Main.getMainMenu();
@@ -80,9 +80,23 @@ public class Cipher_Helper {
     }
 
     public static String cipheringHex(String input) {
-        String result = null;
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < input.length(); i++) {
+            result.append(decToHex(input.charAt(i))).append(" ");
+        }
+        return result.toString();
+    }
 
-        return result;
+    public static String decToHex(int i) {
+        StringBuilder result = new StringBuilder();
+        while (i > 0) {
+            if (i % 16 > 9)
+                result.append((char) (i % 16 - 10 + 'A'));
+            else
+                result.append(i % 16);
+            i /= 16;
+        }
+        return result.reverse().toString();
     }
 
     public static String cipheringVigenere(String input) {
@@ -93,9 +107,33 @@ public class Cipher_Helper {
 
     /* Deciphering methods */
     public static String decipheringHex(String input) {
-        String result = null;
+        StringBuilder result = new StringBuilder();
+        input = clear(input);
+        for (int i = 0; i < input.length(); i += 2) {
+            result.append(hexToDec(input.substring(i, i + 2)));
+        }
+        return result.toString();
+    }
 
-        return result;
+    public static String clear(String input) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < input.length(); i++) {
+            if (input.charAt(i) == ' ') continue;
+            sb.append(input.charAt(i));
+        }
+        return sb.toString();
+    }
+
+    public static char hexToDec(String s) {
+        String digits = "0123456789ABCDEF";
+        s = s.toUpperCase();
+        int val = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            int d = digits.indexOf(c);
+            val = 16 * val + d;
+        }
+        return (char) val;
     }
 
     public static String decipheringVigenere(String input) {
