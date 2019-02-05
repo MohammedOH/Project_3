@@ -54,7 +54,7 @@ public class Cipher_Helper {
     public static void getDecipheringVigenere() {
         System.out.print("Enter the text to be deciphered: ");
         String input = getInput();
-        String result = decipheringHex(input);
+        String result = decipheringVigenere(input);
         String output = (input + " has been deciphered Using VIGENERE to " + result + "\n");
         Main.printAndRecord(output);
         Main.getMainMenu();
@@ -84,7 +84,7 @@ public class Cipher_Helper {
         for (int i = 0; i < input.length(); i++) {
             result.append(decToHex(input.charAt(i))).append(" ");
         }
-        return result.toString();
+        return result.toString().trim();
     }
 
     public static String decToHex(int i) {
@@ -100,22 +100,32 @@ public class Cipher_Helper {
     }
 
     public static String cipheringVigenere(String input) {
-        String result = null;
-
-        return result;
+        final String KEY = "SECRET";
+        StringBuilder result = new StringBuilder();
+        for (int i = 0, j = 0; i < input.length(); i++) {
+            char c = input.charAt(i);
+            if (c == ' ') {
+                result.append(c);
+                continue;
+            } else if (c < 'A' || c > 'Z')
+                continue;
+            result.append((char) ((c + KEY.charAt(j) - 2 * 'A') % 26 + 'A'));
+            j = ++j % KEY.length();
+        }
+        return result.toString();
     }
 
     /* Deciphering methods */
     public static String decipheringHex(String input) {
         StringBuilder result = new StringBuilder();
-        input = clear(input);
+        input = clean(input);
         for (int i = 0; i < input.length(); i += 2) {
-            result.append(hexToDec(input.substring(i, i + 2)));
+            result.append((char) hexToDec(input.substring(i, i + 2)));
         }
         return result.toString();
     }
 
-    public static String clear(String input) {
+    public static String clean(String input) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < input.length(); i++) {
             if (input.charAt(i) == ' ') continue;
@@ -124,22 +134,31 @@ public class Cipher_Helper {
         return sb.toString();
     }
 
-    public static char hexToDec(String s) {
+    public static int hexToDec(String s) {
         String digits = "0123456789ABCDEF";
-        s = s.toUpperCase();
         int val = 0;
         for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            int d = digits.indexOf(c);
+            int d = digits.indexOf(s.charAt(i));
             val = 16 * val + d;
         }
-        return (char) val;
+        return val;
     }
 
     public static String decipheringVigenere(String input) {
-        String result = null;
-
-        return result;
+        StringBuilder result = new StringBuilder();
+        final String KEY = "SECRET";
+        for (int i = 0, j = 0; i < input.length(); i++) {
+            char c = input.charAt(i);
+            if (c == ' ') {
+                result.append(c);
+                continue;
+            } else if (c < 'A' || c > 'Z') {
+                continue;
+            }
+            result.append((char) ((c - KEY.charAt(j) + 26) % 26 + 'A'));
+            j = ++j % KEY.length();
+        }
+        return result.toString();
     }
 
 }

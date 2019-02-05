@@ -20,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MyProgram/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="339">
+              <caret line="98" column="29" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -29,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MyProgram/Cipher_Helper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-32">
-              <caret line="127" selection-start-line="127" selection-end-line="127" />
+            <state relative-caret-position="237">
+              <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -38,12 +38,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JUnitTests/UnitTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+            <state relative-caret-position="-1">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
-                <element signature="e#440#441#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,7 +82,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -97,13 +94,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549323486815" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549359690805" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -123,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UnitTests.testDecipheringHex">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyProgram.Main" />
       <module name="Project_3" />
@@ -152,7 +150,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnitTests.testCipheringAtbash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UnitTests.testCipheringVigenere" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project_3" />
       <extension name="coverage">
         <pattern>
@@ -162,13 +160,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="JUnitTests" />
       <option name="MAIN_CLASS_NAME" value="JUnitTests.UnitTests" />
-      <option name="METHOD_NAME" value="testCipheringAtbash" />
+      <option name="METHOD_NAME" value="testCipheringVigenere" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnitTests.testCipheringHex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UnitTests.testClean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project_3" />
       <extension name="coverage">
         <pattern>
@@ -178,13 +176,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="JUnitTests" />
       <option name="MAIN_CLASS_NAME" value="JUnitTests.UnitTests" />
-      <option name="METHOD_NAME" value="testCipheringHex" />
+      <option name="METHOD_NAME" value="testClean" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnitTests.testDecipheringHex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UnitTests.testHexToDec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project_3" />
       <extension name="coverage">
         <pattern>
@@ -194,7 +192,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="JUnitTests" />
       <option name="MAIN_CLASS_NAME" value="JUnitTests.UnitTests" />
-      <option name="METHOD_NAME" value="testDecipheringHex" />
+      <option name="METHOD_NAME" value="testHexToDec" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UnitTests.testDecipheringHex" />
-        <item itemvalue="JUnit.UnitTests.testCipheringHex" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.UnitTests" />
-        <item itemvalue="JUnit.UnitTests.testCipheringAtbash" />
+        <item itemvalue="JUnit.UnitTests.testCipheringVigenere" />
+        <item itemvalue="JUnit.UnitTests.testClean" />
+        <item itemvalue="JUnit.UnitTests.testHexToDec" />
       </list>
     </recent_temporary>
   </component>
@@ -226,44 +224,45 @@
       <workItem from="1549139313356" duration="56000" />
       <workItem from="1549232432689" duration="2210000" />
       <workItem from="1549275917809" duration="3367000" />
-      <workItem from="1549288355973" duration="3643000" />
+      <workItem from="1549288355973" duration="6157000" />
+      <workItem from="1549355399049" duration="3493000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UnitTests_testDecipheringAtbash - 2019.02.04 at 00h 44m 29s.xml">
-      <configuration name="UnitTests.testDecipheringAtbash" configurationId="JUnit" />
+    <history-entry file="UnitTests_testCipheringVigenere - 2019.02.05 at 10h 56m 51s.xml">
+      <configuration name="UnitTests.testCipheringVigenere" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTests_testDecipheringAtbash - 2019.02.04 at 00h 54m 03s.xml">
-      <configuration name="UnitTests.testDecipheringAtbash" configurationId="JUnit" />
+    <history-entry file="UnitTests_testCipheringVigenere - 2019.02.05 at 10h 58m 02s.xml">
+      <configuration name="UnitTests.testCipheringVigenere" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTests_testCipheringAtbash - 2019.02.04 at 13h 38m 06s.xml">
-      <configuration name="UnitTests.testCipheringAtbash" configurationId="JUnit" />
+    <history-entry file="UnitTests_testCipheringVigenere - 2019.02.05 at 10h 59m 36s.xml">
+      <configuration name="UnitTests.testCipheringVigenere" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTests_testCipheringHex - 2019.02.04 at 13h 38m 13s.xml">
-      <configuration name="UnitTests.testCipheringHex" configurationId="JUnit" />
+    <history-entry file="UnitTests_testCipheringVigenere - 2019.02.05 at 11h 00m 49s.xml">
+      <configuration name="UnitTests.testCipheringVigenere" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTests_testCipheringHex - 2019.02.04 at 13h 40m 48s.xml">
-      <configuration name="UnitTests.testCipheringHex" configurationId="JUnit" />
+    <history-entry file="UnitTests_testCipheringVigenere - 2019.02.05 at 11h 04m 09s.xml">
+      <configuration name="UnitTests.testCipheringVigenere" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTests_testCipheringHex - 2019.02.04 at 13h 41m 12s.xml">
-      <configuration name="UnitTests.testCipheringHex" configurationId="JUnit" />
+    <history-entry file="UnitTests - 2019.02.05 at 11h 04m 21s.xml">
+      <configuration name="UnitTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTests_testCipheringHex - 2019.02.04 at 13h 41m 54s.xml">
-      <configuration name="UnitTests.testCipheringHex" configurationId="JUnit" />
+    <history-entry file="UnitTests - 2019.02.05 at 11h 09m 39s.xml">
+      <configuration name="UnitTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTests_testCipheringHex - 2019.02.04 at 13h 48m 01s.xml">
-      <configuration name="UnitTests.testCipheringHex" configurationId="JUnit" />
+    <history-entry file="UnitTests - 2019.02.05 at 11h 19m 05s.xml">
+      <configuration name="UnitTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTests_testCipheringHex - 2019.02.04 at 13h 48m 44s.xml">
-      <configuration name="UnitTests.testCipheringHex" configurationId="JUnit" />
+    <history-entry file="UnitTests - 2019.02.05 at 11h 19m 35s.xml">
+      <configuration name="UnitTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTests - 2019.02.04 at 13h 51m 26s.xml">
+    <history-entry file="UnitTests - 2019.02.05 at 11h 20m 09s.xml">
       <configuration name="UnitTests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21611000" />
+    <option name="totallyTimeSpent" value="27618000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -278,7 +277,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27231467" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27609682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -287,7 +286,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" x="0" y="23" width="1366" height="705" id="Run" maximized="true" order="2" type="WINDOWED" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -315,27 +314,25 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/MyProgram/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="339">
+          <caret line="98" column="29" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JUnitTests/UnitTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+        <state relative-caret-position="-1">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyProgram/Cipher_Helper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        <state relative-caret-position="237">
+          <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
         </state>
       </provider>
     </entry>

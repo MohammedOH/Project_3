@@ -8,7 +8,6 @@ import MyProgram.*;
 public class UnitTests {
     public static String s = "JAVA PROGRAMMING";
 
-
     Main myProgram;
 
     @Test
@@ -35,7 +34,7 @@ public class UnitTests {
     @Test
     public void testCipheringHex() {
         String testCipheringHex = ciphering.cipheringHex(s);
-        Assert.assertEquals(testCipheringHex, "4A 41 56 41 20 50 52 4F 47 52 41 4D 4D 49 4E 47 ");
+        Assert.assertEquals(testCipheringHex, "4A 41 56 41 20 50 52 4F 47 52 41 4D 4D 49 4E 47");
     }
 
     @Test
@@ -63,4 +62,24 @@ public class UnitTests {
         Assert.assertEquals(testDecipheringVigenere, s);
     }
 
+    /* Test helper methods */
+    @Test
+    public void testDecToHex() {
+        Assert.assertEquals("41", Cipher_Helper.decToHex(65));
+        Assert.assertEquals("5A", Cipher_Helper.decToHex(90));
+        Assert.assertEquals("4D", Cipher_Helper.decToHex(77));
+    }
+
+    @Test
+    public void testHexToDec() {
+        Assert.assertEquals(68, Cipher_Helper.hexToDec("44"));
+        Assert.assertEquals(79, Cipher_Helper.hexToDec("4F"));
+        Assert.assertEquals(76, Cipher_Helper.hexToDec("4C"));
+    }
+
+    @Test
+    public void testClean() {
+        Assert.assertEquals("4A4156412050524F4752414D4D494E47"
+                , Cipher_Helper.clean("4A 41 56 41 20 50 52 4F 47 52 41 4D 4D 49 4E 47 "));
+    }
 }
