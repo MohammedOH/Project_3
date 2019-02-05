@@ -5,62 +5,80 @@ import java.util.Scanner;
 public class Cipher_Helper {
     /* Ciphering*/
     public static void getCipheringAtbash() {
+        // Receiving text
         System.out.print("Enter the text to be ciphered: ");
         String input = getInput();
+        // Ciphering
         String result = cipheringAtbash(input);
         String output = (input + " has been ciphered Using ATBASH to " + result + "\n");
+        // Print and record result
         Main.printAndRecord(output);
         Main.getMainMenu();
     }
 
     public static void getCipheringHex() {
+        // Receiving text
         System.out.print("Enter the text to be ciphered: ");
         String input = getInput();
+        // Ciphering
         String result = cipheringHex(input);
         String output = (input + " has been ciphered Using HEXADECIMAL to " + result + "\n");
+        // Print and record result
         Main.printAndRecord(output);
         Main.getMainMenu();
     }
 
     public static void getCipheringVigenere() {
+        // Receiving text
         System.out.print("Enter the text to be ciphered: ");
         String input = getInput();
+        // Ciphering
         String result = cipheringVigenere(input);
         String output = (input + " has been ciphered Using VIGENERE to " + result + "\n");
+        // Print and record result
         Main.printAndRecord(output);
         Main.getMainMenu();
     }
 
     /* Deciphering */
     public static void getDecipheringAtbash() {
+        // Receiving text
         System.out.print("Enter the text to be deciphered: ");
         String input = getInput();
+        // deciphering
         String result = cipheringAtbash(input);
         String output = (input + " has been deciphered Using ATBASH to " + result + "\n");
+        // Print and record result
         Main.printAndRecord(output);
         Main.getMainMenu();
     }
 
     public static void getDecipheringHex() {
+        // Receiving text
         System.out.print("Enter the text to be deciphered: ");
         String input = getInput();
+        // deciphering
         String result = decipheringHex(input);
         String output = (input + " has been deciphered Using HEXADECIMAL to " + result + "\n");
+        // Print and record result
         Main.printAndRecord(output);
         Main.getMainMenu();
 
     }
 
     public static void getDecipheringVigenere() {
+        // Receiving text
         System.out.print("Enter the text to be deciphered: ");
         String input = getInput();
+        // deciphering
         String result = decipheringVigenere(input);
         String output = (input + " has been deciphered Using VIGENERE to " + result + "\n");
+        // Print and record result
         Main.printAndRecord(output);
         Main.getMainMenu();
     }
 
-    /* Method to get a strin from user*/
+    /* Method to get a string from user */
     private static String getInput() {
         Scanner input = new Scanner(System.in);
         return (input.nextLine().toUpperCase());
@@ -160,5 +178,4 @@ public class Cipher_Helper {
         }
         return result.toString();
     }
-
 }
